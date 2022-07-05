@@ -24,7 +24,15 @@ public class Main {
 //            System.out.print(arr[i] + " ");
 //        }
         System.out.println();
-        // System.out.println("Найбільший елемент масиву: " + minMaxEl.findMaxEl(arr));
-        // System.out.println("Найменший елемент масиву: " + minMaxEl.findMinEl(arr));
+        System.out.println("Найбільший елемент масиву: " + minMaxEl.findMaxEl(arr));
+        System.out.println("Найменший елемент масиву: " + minMaxEl.findMinEl(arr));
+
+
+        MultipleArr multipleArr =  new MultipleArr();
+        for (int i = 0; i < multipleArr.showMultipleArr(arr, arrLength).size(); i++) {
+            System.out.print(multipleArr.showMultipleArr(arr, arrLength).get(i) + " ");
+        }
+
+
     }
 }
